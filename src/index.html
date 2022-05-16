@@ -9,7 +9,6 @@
     <meta name="description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
     <link rel="shortcut icon" type="image/png" href="icons/favicon/favicon.ico"/>
     <link rel="stylesheet" href="css/style.min.css">
-    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
 </head>
 <body>
     <aside class="sidepanel">
@@ -27,10 +26,10 @@
                 </div>
                 <ul class="menu__list">
                     <li class="menu__link"><a href="#about">про меня</a></li>
-                    <li class="menu__link"><a href="#resume">мое образование</a></li>
+                    <li class="menu__link"><a href="#resume">образование</a></li>
                     <li class="menu__link"><a href="#skills">мои навыки</a></li>
                     <li class="menu__link"><a href="#portfolio">мои работы</a></li>
-                    <li class="menu__link"><a href="#certificate">мои сертификаты</a></li>
+                    <li class="menu__link"><a href="#certificate">сертификаты</a></li>
                     <li class="menu__link"><a href="#contacts">контакты</a></li>
                 </ul>
             </nav>
@@ -52,8 +51,8 @@
             <div class="title title_fz16 promo__subtitle">Меня зовут Андрей Тебенко</div>
             <h1 class="title title_fz48 promo__title">Я web-разработчик из города Николаев</h1>
             <div class="promo__btns">
-                <a href="#" class="promo__link btn">Портфолио</a>
-                <a href="#" class="promo__link">Про меня</a>
+                <a href="#portfolio" class="promo__link btn">Портфолио</a>
+                <a href="#about" class="promo__link">Про меня</a>
             </div>
         </div>
     </section>
@@ -61,7 +60,11 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img src="img/main_photo.png" alt="person">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="img/main_min_photo.png">
+                        <source media="(min-width: 577px)" srcset="img/main_photo.png">
+                        <img src="img/main_photo.png" alt="person">
+                    </picture>
                 </div>
                 <div class="about__description">
                     <div class="about__representation">
@@ -289,13 +292,13 @@
             <div class="divider"></div>
             <div class="portfolio__wrapper">
                 <div class="portfolio__item">
-                    <a href="https://andrewtebenko.github.io/engineering_works/" target="_blank">
-                        <img src="img/works/uber.jpg" alt="uber">
+                    <a href="https://andrewtebenko.github.io/pulse/src/" target="_blank">
+                        <img src="img/works/pulse.jpg" alt="pulse">
                     </a>
                 </div>
                 <div class="portfolio__item">
-                    <a href="https://andrewtebenko.github.io/pulse/src/" target="_blank">
-                        <img src="img/works/pulse.jpg" alt="pulse">
+                    <a href="https://andrewtebenko.github.io/engineering_works/" target="_blank">
+                        <img src="img/works/uber.jpg" alt="uber">
                     </a>
                 </div>
                 <div class="portfolio__item">
@@ -330,11 +333,10 @@
                 <img src="img/arrow/arrow-left.svg" id="btn-previous" alt="arrow">
                 <img src="img/arrow/arrow-right.svg" id="btn-next" alt="arrow">
                 <div class="certificate__slides">
-                    <img src="img/certificate/certificate.webp" id="lastClone" alt="certificate">
+                    <img src="img/certificate/certificate_globallogic.png" id="lastClone" alt="certificate">
+                    <img src="img/certificate/certificate_udemy.jpg" alt="certificate">
                     <img src="img/certificate/certificate_globallogic.png" alt="certificate">
-                    <img src="img/certificate/2.webp" alt="certificate">
-                    <img src="img/certificate/certificate.webp" alt="certificate">
-                    <img src="img/certificate/certificate_globallogic.png" id="firstClone" alt="certificate">
+                    <img src="img/certificate/certificate_udemy.jpg" id="firstClone" alt="certificate">
                 </div>
             </div>
         </div>
