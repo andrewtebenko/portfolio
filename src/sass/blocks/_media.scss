@@ -193,16 +193,19 @@
     .about {
         &__wrapper {
             grid-template: 340px auto auto / 1fr;
-            max-width: 360px;
         }
         .title {
             &_fz36 {
                 font-size: 30px;
             }
         }
+        &__photo, &__description {
+            width: 340px;
+        }
         &__skills {
             grid-template-columns: 1fr;
         }
+
     }
     .resume {
         .title {
