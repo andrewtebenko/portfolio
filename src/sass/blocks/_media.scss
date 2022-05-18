@@ -85,7 +85,7 @@
             grid-template-rows: repeat(2,minmax(85px,auto));
             grid-auto-rows: minmax(115px, auto);
             &-item {
-                grid-template-columns: 40px 320px;
+                grid-template-columns: 60px 300px;
                 column-gap: 20px;
             }
         }
@@ -204,6 +204,12 @@
         }
         &__skills {
             grid-template-columns: 1fr;
+            &-item {
+                grid-template-columns: 60px 250px;
+            }
+            &-circle {
+                margin-left: 20px;
+            }
         }
 
     }
