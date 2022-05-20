@@ -1,6 +1,7 @@
 const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
-      close = document.querySelector('.menu__close');
+      close = document.querySelector('.menu__close'),
+      link = document.querySelectorAll('.menu__link a');
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
@@ -8,6 +9,12 @@ hamburger.addEventListener('click', () => {
 
 close.addEventListener('click', () => {
     menu.classList.remove('active');
+})
+
+link.forEach(item => {
+    item.addEventListener('click', () => {
+        menu.classList.remove('active');
+    });
 })
 
 // Dynamic percentage change
